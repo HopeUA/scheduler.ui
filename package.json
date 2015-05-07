@@ -1,0 +1,17 @@
+{
+  "name": "scheduler.ui",
+  "version": "0.0.1",
+  "description": "Hope Scheduler UI",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sergey Sadovoi <sergey@hope.ua>",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.8.11",
+    "gulp-babel": "^5.1.0",
+    "gulp-concat": "^2.5.2",
+    "gulp-sourcemaps": "^1.5.2"
+  }
+}
