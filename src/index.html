@@ -65,6 +65,11 @@
             color: #1b809e;
             cursor: pointer;
         }
+
+        .form-auth {
+            display: inline-block;
+            margin-left: 20px;
+        }
     </style>
 </head>
 
@@ -105,6 +110,14 @@
                 <input type="file" name="...">
             </span>
         </div>
+
+        <form class="form-inline form-auth">
+            <div class="form-group">
+                <label for="token">Auth Token</label>
+                <input type="text" class="form-control" id="token" placeholder="PZMx6NcpFvFeHt7s"/>
+            </div>
+            <button class="btn btn-default btn-auth">Save</button>
+        </form>
     </div>
 </div>
 
