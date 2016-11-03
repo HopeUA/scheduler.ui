@@ -21,7 +21,7 @@ $(() => {
     let $prev    = $('.day-prev');
     let $next    = $('.day-next');
 
-    let now = moment();
+    let now = moment().utcOffset(AppConfig.timezone);
     displayDate(now);
 
     $prev.click(() => {

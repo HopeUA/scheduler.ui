@@ -5,5 +5,6 @@ var AppConfig = {
             endpoint: 'https://scheduler.s.hope.ua/v1'
             // endpoint: 'http://localhost:3000/v1'
         }
-    }
+    },
+    timezone: '+02:00'
 };

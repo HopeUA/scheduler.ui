@@ -119,7 +119,7 @@ var setState = ($event, state) => {
 };
 
 var updateEvent = ($event, data) => {
-    let date = moment(data.date);
+    let date = moment(data.date).utcOffset(AppConfig.timezone);
 
     setState($event, data.state);
     $event.data('id', data.id);

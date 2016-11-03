@@ -248,7 +248,8 @@ var AppConfig = {
             endpoint: 'https://scheduler.s.hope.ua/v1'
             // endpoint: 'http://localhost:3000/v1'
         }
-    }
+    },
+    timezone: '+03:00'
 };
 
 var displayDate = function displayDate(date) {
@@ -274,7 +275,7 @@ $(function () {
     var $prev = $('.day-prev');
     var $next = $('.day-next');
 
-    var now = moment();
+    var now = moment().utcOffset(AppConfig.timezone);
     displayDate(now);
 
     $prev.click(function () {
@@ -413,7 +414,7 @@ var setState = function setState($event, state) {
 };
 
 var updateEvent = function updateEvent($event, data) {
-    var date = moment(data.date);
+    var date = moment(data.date).utcOffset(AppConfig.timezone);
 
     setState($event, data.state);
     $event.data('id', data.id);
