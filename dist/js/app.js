@@ -249,7 +249,7 @@ var AppConfig = {
             // endpoint: 'http://localhost:3000/v1'
         }
     },
-    timezone: '+03:00'
+    timezone: '+02:00'
 };
 
 var displayDate = function displayDate(date) {
